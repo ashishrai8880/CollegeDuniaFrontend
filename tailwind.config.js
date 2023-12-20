@@ -16,6 +16,7 @@ module.exports = {
     typography,
     forms,
     aspectRatio,
+    require("tw-elements/dist/plugin.cjs")
   ],
 }
 

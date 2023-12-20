@@ -7,7 +7,7 @@
 </template>
 
 <script>
-
+// import { Tooltip, initTE } from "tw-elements";
 import NavBar from './components/NavBar.vue'
 
 
@@ -16,7 +16,12 @@ export default {
   components: {
     
     NavBar
-  }
+  },
+  // onMounted: function() {
+  //   console.log('mounted');
+  //   initTE({ Tooltip });
+  // }
+  
 }
 </script>
 
