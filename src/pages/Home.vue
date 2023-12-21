@@ -1,44 +1,6 @@
 <template>
-  <!-- <section class="bg_img">
-        <nav class="nav_menu">
-          <ul>
-            <li><a href="">BTech</a></li>
-            <li><a href="">MTech</a></li>
-            <li><a href="">BBA</a></li>
-            <li><a href="">BCA</a></li>
-            <li><a href="">Home</a></li>
-            <li><a href="">Home</a></li>
-            <li><a href="">Home</a></li>
-            <li><a href="">Home</a></li>
-            <li><a href="">Home</a></li>
-            <li><a href="">Home</a></li>
-            <li><a href="">Home</a></li>
-            <li><a href="">Home</a></li>
-          </ul>
-        </nav>
-        
-    </section> -->
-
-  <!-- Right-aligned Navbar -->
   <nav class="navbar">
     <div class="container flex items-center justify-between">
-
-
-
-      <!-- <div class="logo">
-        <img src="logo.jpg" alt="College Logo">
-      </div>
-      <div class="search-bar">
-        <input type="text" placeholder="Search">
-      </div>
-      <div class="auth-buttons">
-        <router-link   to="/login"><button  >Login</button></router-link>
-        <router-link    to="/register"><button class="signup-button" >Register</button></router-link>
-        <button v-if="!user" v-on:click="logout"   class="signup-button" >Logout</button>
-      </div> -->
-
-
-
 
 
       <!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com -->
@@ -256,29 +218,8 @@
           <!-- Right elements -->
         </div>
       </nav>
-
-
-
-
-
     </div>
   </nav>
-
-
-
-  <!-- Carousel -->
-  <!-- <div class="carousel">
-    <div class="carousel-images">
-      <img src="clg.webp" alt="Image 1" class="carousel-image">
-      <img src="clg2.webp" alt="Image 2" class="carousel-image">
-      <img src="clg3.webp" alt="Image 3" class="carousel-image">
-    </div>
-    <div class="search-overlay">
-      <h1>Find Your Perfect College</h1>
-      <input class="banner_search" type="text" placeholder="Search for courses, colleges, etc.">
-    </div>
-  </div> -->
-
 
 
 
@@ -366,43 +307,338 @@
         class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
     </button>
   </div>
+
+
+
+
+
+
+  <!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com -->
+  <!-- Button trigger modal -->
+  <!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com -->
+  <!-- Button trigger modal -->
+  <button ref="modal" type="button" class="invisible   transition duration-150 ease-in-out " data-te-toggle="modal"
+    data-te-target="#exampleModalFullscreen" data-te-ripple-init data-te-ripple-color="light">
+    Launch demo modal full screen
+  </button>
+
+  <!-- Modal -->
+  <div data-te-modal-init
+    class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+    id="exampleModalFullscreen" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" aria-hidden="true">
+    <div data-te-modal-dialog-ref
+      class="pointer-events-none relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[0px]:m-0 min-[0px]:h-full min-[0px]:max-w-none">
+      <div
+        class="pointer-events-auto relative flex w-full flex-col rounded-md bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600 min-[0px]:h-full min-[0px]:rounded-none min-[0px]:border-0">
+        <div
+          class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50 min-[0px]:rounded-none">
+          <!-- Modal title -->
+          <h5 class="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200"
+            id="exampleModalFullscreenLabel">
+            Modal title
+          </h5>
+          <!-- Close button -->
+          <button type="button"
+            class="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
+            data-te-modal-dismiss aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="h-6 w-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="relative p-4 min-[0px]:overflow-y-auto">
+
+          <div class="h-full">
+            <!-- Left column container with background-->
+            <div class="g-6 flex h-full flex-wrap items-center justify-center lg:justify-between">
+              <div class="shrink-1 mb-12 grow-0 basis-auto md:mb-0 md:w-9/12 md:shrink-0 lg:w-6/12 xl:w-6/12">
+                <img src="https://tecdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp" class="w-full"
+                  alt="Sample image" />
+              </div>
+
+              <!-- Right column container -->
+              <div class="mb-12 md:mb-0 md:w-8/12 lg:w-5/12 xl:w-5/12">
+                <form>
+                  <!--Sign in section-->
+                  <div class="flex flex-row items-center justify-center lg:justify-start">
+                    <p class="mb-0 mr-4 text-lg">Sign in with</p>
+
+                    <!-- Facebook -->
+                    <button type="button" data-te-ripple-init data-te-ripple-color="light"
+                      class="inlne-block mx-1 h-9 w-9 rounded-full bg-primary uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
+                      <!-- Facebook -->
+                      <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-3.5 w-3.5" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path
+                          d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                      </svg>
+                    </button>
+
+                    <!-- Twitter -->
+                    <button type="button" data-te-ripple-init data-te-ripple-color="light"
+                      class="inlne-block mx-1 h-9 w-9 rounded-full bg-primary uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
+                      <!-- Twitter -->
+                      <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-3.5 w-3.5" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path
+                          d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                      </svg>
+                    </button>
+
+                    <!-- Linkedin -->
+                    <button type="button" data-te-ripple-init data-te-ripple-color="light"
+                      class="inlne-block mx-1 h-9 w-9 rounded-full bg-primary uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
+                      <!-- Linkedin -->
+                      <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-3.5 w-3.5" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path
+                          d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                      </svg>
+                    </button>
+                  </div>
+
+                  <!-- Separator between social media sign in and email/password sign in -->
+                  <div
+                    class="my-4 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300">
+                    <p class="mx-4 mb-0 text-center font-semibold dark:text-white">
+                      Or
+                    </p>
+                  </div>
+
+                  <!-- Email input -->
+                  <div class="relative mb-6">
+                    <input v-model="user.email" type="text"
+                      class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                      id="exampleFormControlInput2" placeholder="Email address" />
+                    <label  v-if="!user.email" for="exampleFormControlInput2"
+                      class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">Email
+                      address
+                    </label>
+                  </div>
+
+                  <!-- Password input -->
+                  <div class="relative mb-6">
+                    <input v-model="user.password" type="password"
+                      class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                      id="exampleFormControlInput22" placeholder="Password" />
+                    <label  v-if="!user.password" for="exampleFormControlInput22"
+                      class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">Password
+                    </label>
+                  </div>
+
+                  <!-- Phone input -->
+                  <div class="relative mb-6 flex">
+                    <!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com -->
+                    <select id="dial" v-model="user.dial" data-te-select-init data-te-select-filter="true">
+                      <option v-for="dial in dialCode" :value="dial.dial_code">{{ ` (${dial.dial_code}) ${dial.name}` }}
+                      </option>
+                    </select>
+                    <label  v-if="!user.dial" for="dial"
+                      class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">Dial
+                      Code (+91) India
+                    </label>
+
+                  </div>
+
+                  <div class="relative mb-6 flex">
+                  <input v-model="user.phone" type="text"
+                      class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 mt-1"
+                      id="phone" placeholder="Phone Number" />
+                    <label  v-if="!user.phone" for="phone"
+                      class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">Phone
+                    </label> 
+                  </div>
+
+                  <div class="relative mb-6 flex">
+                    <select id="city" v-model="user.city" data-te-select-init data-te-select-filter="true">
+                    <option v-for="city in cityList" >{{city}}</option>
+                  </select>
+                  <label v-if="!user.city" for="city"
+                      class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">City
+                       Vasant Kunj (Delhi , India)
+                    </label>
+                  </div>
+
+                  <div class="relative mb-6 flex">
+                    <select id="course" v-model="user.course" data-te-select-init data-te-select-filter="true">
+                    <option v-for="course in courseList" >{{course}}</option>
+                  </select>
+                  <label v-if="!user.course" for="course"
+                      class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">City
+                       Course (BTech CSE)
+                    </label>
+                  </div>
+                  
+
+                  <div class="mb-6 flex items-center justify-between">
+                    <!-- Remember me checkbox -->
+                    <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
+                      <input
+                        class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
+                        type="checkbox" value="" id="exampleCheck2" />
+                      <label class="inline-block pl-[0.15rem] hover:cursor-pointer" for="exampleCheck2">
+                        Remember me
+                      </label>
+                    </div>
+
+                    <!--Forgot password link-->
+                    <a href="#!">Forgot password?</a>
+                  </div>
+
+                  <!-- Login button -->
+                  <div class="text-center lg:text-left">
+                    <button v-on:click="register" type="button"
+                      class="inline-block rounded bg-primary px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                      data-te-ripple-init data-te-ripple-color="light">
+                      Register
+                    </button>
+
+                    <!-- Register link -->
+                    <p class="mb-0 mt-2 pt-1 text-sm font-semibold">
+                      Already have an account?
+                      <router-link to="/login">
+                        <a href="#!"
+                          class="text-danger transition duration-150 ease-in-out hover:text-danger-600 focus:text-danger-600 active:text-danger-700">Login</a>
+                      </router-link>
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+        <!-- Modal footer -->
+        <div
+          class="mt-auto flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50 min-[0px]:rounded-none">
+          <button ref="closeModal" type="button"
+            class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200"
+            data-te-modal-dismiss>
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script >
-import { onBeforeMount, ref } from 'vue';
+import { onBeforeMount, ref, watch } from 'vue';
 import axios from 'axios';
 import router from '@/router';
 
 const setup = () => {
 
-  // document.addEventListener('DOMContentLoaded', function () {
-  //   const carouselImages = document.querySelectorAll('.carousel-image');
 
-  //   let currentIndex = 0;
+  const user = ref({
+    email: '',
+    password: '',
+    dial: '',
+    phone: '',
+    city: '',
+    course: '',
+  })
 
-  //   function showNextImage() {
-  //     carouselImages[currentIndex].style.display = 'none';
+  watch(user.value.dial, (newval, oldval) => {
+    console.log(newval)
+  })
 
-  //     currentIndex = (currentIndex + 1) % carouselImages.length;
-
-  //     carouselImages[currentIndex].style.display = 'block';
-  //   }
-
-  //   setInterval(showNextImage, 3000);
-  // });
+  const dialCode = ref();
+  const cityList = ref();
+  const courseList = ref([
+    'Bachelor Of Technology (Computer Science)' ,
+    'Bachelor Of Technology (Mechanical Engineering)' ,
+    'Bachelor Of Technology (Civil Engineering)' ,
+    'Bachelor Of Technology (Electronic Engineering)' ,
+    'Bachelor Of Technology (Electrical Engineering)' ,
+    'Bachelor Of Arts' ,
+    'Bachelor Of Commerce' ,
+    'Bachelor Of Science' ,
+  ]);
 
   const isLogin = ref(false);
-  const user = ref(localStorage.getItem('user'));
-  const modal = ref(false);
+  const loggedInUser = ref(localStorage.getItem('user'));
+
+  const modal = ref(null);
+  const closeModal = ref(null);
+
   const logout = () => {
     console.log('logout comming')
     localStorage.clear();
     router.push('/login');
   }
 
+
+  onBeforeMount(() => {
+
+    axios.get('https://countriesnow.space/api/v0.1/countries/codes')
+      .then((res) => {
+        dialCode.value = res.data.data;
+        // user.value.dial = dialCode.value[0].dial_code;
+      })
+      .catch((err) => {
+        alert(` Error : ${err.response.data.error.message}`)
+        console.log('Error : ', err);
+      });
+
+    axios.post('https://countriesnow.space/api/v0.1/countries/cities' , {"country": "india"})
+      .then((res) => {
+        cityList.value = res.data.data;
+        // user.value.city = cityList.value[0];
+      })
+      .catch((err) => {
+        alert(` Error : ${err.response.data.error.message}`)
+        console.log('Error : ', err);
+      });
+
+  })
+
+  const register = async () => {
+    console.log('user data : ', user.value);
+    
+    user.value.phone = user.value.dial + user.value.phone ;
+    delete user.value.dial
+    console.log('user data : ', user.value);
+    axios.post('http://127.0.0.1:3000/api/auth/register',{...user.value }, {
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+      .then((res) => {
+        localStorage.setItem("user", JSON.stringify(res.data.user));
+        localStorage.setItem("token", JSON.stringify(res.data.token));
+        alert(`Success : ${res.data.message}`)
+        closeModal.value.click();
+      })
+      .catch((err) => {
+        alert(` Error : ${err.response.data.error.message}`)
+        console.log('Error : ', err);
+      });
+
+  }
+
+  // onBeforeMount(()=>{
+  setTimeout(() => {
+    modal.value.click();
+  }, 1000);
+
+
   return {
     modal,
-    logout
+    logout,
+    user,
+    register,
+    closeModal,
+    dialCode ,
+    cityList ,
+    courseList ,
   }
 
 }
